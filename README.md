@@ -4,21 +4,23 @@ The solution streamlines candidate registration, compliance verification, docume
 Mfanageza Trading & Projects CRM Solution
 Project Overview
 This project is a Salesforce CRM solution designed for Mfanageza Trading & Projects, a South African skills development and training company led by Bongani Mfana ka Geza.
-The solution streamlines candidate registration, compliance verification, document management, automated notifications, and reporting for SETA and SAQA programmes.
-Rather than being a simple Trailhead exercise, this project demonstrates a real-world Salesforce implementation focused on solving business challenges through automation, data quality, and process improvement.
 
+The solution streamlines candidate registration, compliance verification, document management, automated notifications, and reporting for SETA and SAQA programmes.
+
+Rather than being a simple Trailhead exercise, this project demonstrates a real-world Salesforce implementation focused on solving business challenges through automation, data quality, and process improvement.
+---
 Business Problem
 Mfanageza Trading & Projects manages large numbers of candidates applying for skills development and training programmes.
+
 Before this solution:
+
 Candidate information was captured manually.
 Compliance documents were difficult to track.
 Staff manually followed up with candidates.
 Missing or rejected documents delayed programme registration.
 SETA reporting required significant manual effort.
+
 The objective was to digitize the entire candidate compliance process using Salesforce.
-
-
-
 
 
 Solution Architecture
@@ -42,8 +44,10 @@ Reports & Dashboards
 
 
 Salesforce Objects
+---
 Contact (Candidate)
 The Contact object stores candidate information, including:
+
 First Name
 Last Name
 Email Address
@@ -51,9 +55,12 @@ Mobile Number
 South African ID Number
 Programme
 Province
+---
 Compliance Document (Custom Object)
+
 A custom object created to manage candidate compliance documentation.
 Fields
+
 Document Type
 Verification Status
 Rejection Reason
@@ -68,17 +75,20 @@ Candidate
 
 One candidate can have multiple compliance documents linked to their profile.
 
-
+---
 Validation Rules
+
 A custom validation rule ensures that every South African ID Number contains exactly 13 digits before the record can be saved.
 Business Value
+
 Prevents invalid candidate records.
 Improves data quality.
 Supports SETA compliance.
 Reduces administrative errors.
 
-
+---
 Salesforce Automation
+
 Automated Compliance Rejection Flow
 A Record-Triggered Flow automatically sends an email whenever:
 Verification Status = Rejected
@@ -100,14 +110,18 @@ Kind Regards,
 
 Mfanageza Trading & Projects
 
-
+---
 Email Template
+
 Compliance Document Rejection Notice
+
 Dynamic merge fields include:
 Candidate First Name
 Document Type
 Rejection Reason
+
 This eliminates the need for staff to manually send rejection emails.
+
 Business Process Flow
 Candidate submits documents
           │
@@ -131,9 +145,11 @@ Verification Status
          Candidate uploads corrected document
 
 
-
+---
 Reports & Dashboards
+
 The CRM enables management to monitor:
+
 Compliance Documents by Status
 Approved Documents
 Rejected Documents
@@ -141,7 +157,9 @@ Documents Awaiting Verification
 Candidates Ready for SETA Registration
 Compliance Progress Dashboard
 
+---
 Features Implemented
+
 Custom Candidate Management
 Compliance Document Custom Object
 Lookup Relationships
@@ -152,7 +170,7 @@ Automated Notifications
 Salesforce Reports
 Dashboard-ready Data Model
 
-
+---
 Skills Demonstrated
 Salesforce Administration
 Custom Objects
