@@ -1,19 +1,21 @@
 # Salesforce CRM solution designed for Mfanageza Trading Projects
 The solution streamlines candidate registration, compliance verification, document management, automated notifications, and reporting for SETA and SAQA programmes.
----
+
 Mfanageza Trading & Projects CRM Solution
 Project Overview
+
 This project is a Salesforce CRM solution designed for Mfanageza Trading & Projects, a South African skills development and training company led by Bongani Mfana ka Geza.
 
 The solution streamlines candidate registration, compliance verification, document management, automated notifications, and reporting for SETA and SAQA programmes.
 
 Rather than being a simple Trailhead exercise, this project demonstrates a real-world Salesforce implementation focused on solving business challenges through automation, data quality, and process improvement.
----
+
 Business Problem
+---
 Mfanageza Trading & Projects manages large numbers of candidates applying for skills development and training programmes.
 
 Before this solution:
-
+---
 Candidate information was captured manually.
 Compliance documents were difficult to track.
 Staff manually followed up with candidates.
@@ -25,6 +27,7 @@ The objective was to digitize the entire candidate compliance process using Sale
 
 Solution Architecture
 Candidate (Contact)
+---
         │
         ▼
 Compliance Document
@@ -55,8 +58,9 @@ Mobile Number
 South African ID Number
 Programme
 Province
----
+
 Compliance Document (Custom Object)
+---
 
 A custom object created to manage candidate compliance documentation.
 Fields
@@ -68,15 +72,12 @@ Upload Date
 Candidate (Lookup Relationship)
 Verified By
 Verification Date
-Relationship
-Candidate
-     │
-     └──── Compliance Document
 
 One candidate can have multiple compliance documents linked to their profile.
 
----
+
 Validation Rules
+---
 
 A custom validation rule ensures that every South African ID Number contains exactly 13 digits before the record can be saved.
 Business Value
@@ -86,9 +87,9 @@ Improves data quality.
 Supports SETA compliance.
 Reduces administrative errors.
 
----
-Salesforce Automation
 
+Salesforce Automation
+---
 Automated Compliance Rejection Flow
 A Record-Triggered Flow automatically sends an email whenever:
 Verification Status = Rejected
@@ -110,9 +111,8 @@ Kind Regards,
 
 Mfanageza Trading & Projects
 
----
 Email Template
-
+---
 Compliance Document Rejection Notice
 
 Dynamic merge fields include:
@@ -123,6 +123,7 @@ Rejection Reason
 This eliminates the need for staff to manually send rejection emails.
 
 Business Process Flow
+---
 Candidate submits documents
           │
           ▼
@@ -145,9 +146,9 @@ Verification Status
          Candidate uploads corrected document
 
 
----
-Reports & Dashboards
 
+Reports & Dashboards
+--
 The CRM enables management to monitor:
 
 Compliance Documents by Status
@@ -157,9 +158,8 @@ Documents Awaiting Verification
 Candidates Ready for SETA Registration
 Compliance Progress Dashboard
 
----
 Features Implemented
-
+---
 Custom Candidate Management
 Compliance Document Custom Object
 Lookup Relationships
@@ -170,8 +170,9 @@ Automated Notifications
 Salesforce Reports
 Dashboard-ready Data Model
 
----
+
 Skills Demonstrated
+---
 Salesforce Administration
 Custom Objects
 Custom Fields
@@ -197,6 +198,7 @@ Process Improvement
 
 
 Business Benefits
+---
 This solution delivers measurable business value by:
 Reducing manual administration.
 Improving candidate onboarding.
@@ -206,6 +208,7 @@ Improving reporting and visibility.
 Creating a scalable CRM solution for future growth.
 
 Technologies Used
+---
 Salesforce Lightning Experience
 Salesforce Flow Builder
 Custom Objects
@@ -214,6 +217,7 @@ Email Templates
 Reports & Dashboards
 
 Future Enhancements
+---
 One-click SAQA/SETA Export Report
 Candidate Self-Service Portal (Experience Cloud)
 Approval Process for Compliance Verification
@@ -222,6 +226,7 @@ Digital Signatures for Training Agreements
 
 
 Learning Outcomes
+---
 Through this project, I gained practical experience in:
 Designing a Salesforce CRM solution from business requirements.
 Creating custom Salesforce objects and relationships.
@@ -232,6 +237,7 @@ Developing reports and dashboards to support business decision-making.
 
 
 About the Project
+---
 Project Name: Mfanageza Trading & Projects CRM Solution
 Role: Salesforce Administrator & Business Analyst
 Purpose: To design and implement a Salesforce CRM solution that manages candidate registration, compliance verification, document tracking, and automated communication for South African skills development programmes.
@@ -249,6 +255,7 @@ Dashboard
 
 
 Author
+---
 Kabelo Gopane
 Role: Salesforce Administrator | Business Analyst | CRM Enthusiast
 This project forms part of my Salesforce portfolio and demonstrates my ability to design, configure, automate, and implement real-world CRM solutions that solve business challenges using Salesforce.
